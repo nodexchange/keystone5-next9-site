@@ -1,0 +1,12 @@
+dist/*
+node_modules/*
+.env*
+!.env.example
+ngrok.yml
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+ngrok.exe
+deploy/Dockerrun.aws.json
