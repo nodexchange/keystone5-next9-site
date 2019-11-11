@@ -2,10 +2,10 @@
 import { jsx } from '@emotion/core';
 import getConfig from 'next/config';
 
-import { Button, Html } from '../primitives';
-import { colors, gridSize, shadows } from '../theme';
-import { getForegroundColor } from '../helpers';
-import { mq } from '../helpers/media';
+import { Button, Html } from '../../primitives';
+import { colors, gridSize, shadows } from '../../theme';
+import { getForegroundColor } from '../../helpers';
+import { mq } from '../../helpers/media';
 
 const { publicRuntimeConfig } = getConfig();
 

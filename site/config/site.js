@@ -1,5 +1,5 @@
 const MEETUP = {
-  name: 'KeystoneJS Meetup',
+  name: 'OUP Arc',
   twitterHandle: '@keystonejs',
   siteUrl: 'https://meetup.keystonejs.com/',
   themeColor: '#2377E7',

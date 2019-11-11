@@ -9,11 +9,11 @@ const { NextApp } = require('@keystonejs/app-next');
 
 const { Event, Talk, User, Rsvp, Organiser, Sponsor, ForgottenPasswordToken } = require('./schema');
 
-const MEETUP = require('./meetupConfig');
+const SITE = require('./site/config/site');
 const initialiseData = require('./initialData');
 
 const keystone = new Keystone({
-  name: MEETUP.name,
+  name: SITE.name,
   adapter: new MongooseAdapter(),
   onConnect: initialiseData,
 });

@@ -95,20 +95,20 @@ const fontSizeMap = {
 };
 
 const makeImageFragment = (name, size) => gql`
-	fragment ${name} on CloudinaryImage_File {
-		${size}: publicUrlTransformed(
-			transformation: {
-				# quality can be low because we have a larger image size
-				quality: "40"
-				# Double size so that we get nice images on hi-dpi screens
-				width: "${sizeMap[size] * 2}"
-				height: "${sizeMap[size] * 2}"
-				crop: "thumb"
-				# only show the first fame of GIFs (sorry Joss)
-				page: "1"
-			}
-		)
-	}
+  fragment ${name} on CloudinaryImage_File {
+    ${size}: publicUrlTransformed(
+      transformation: {
+        # quality can be low because we have a larger image size
+        quality: "40"
+        # Double size so that we get nice images on hi-dpi screens
+        width: "${sizeMap[size] * 2}"
+        height: "${sizeMap[size] * 2}"
+        crop: "thumb"
+        # only show the first fame of GIFs (sorry Joss)
+        page: "1"
+      }
+    )
+  }
 `;
 
 Avatar.fragments = {

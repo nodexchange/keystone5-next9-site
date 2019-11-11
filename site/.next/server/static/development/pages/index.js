@@ -5928,6 +5928,61 @@ const EventItems = (_ref) => {
 
 /***/ }),
 
+/***/ "./components/Header.js":
+/*!******************************!*\
+  !*** ./components/Header.js ***!
+  \******************************/
+/*! exports provided: Header */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Header", function() { return Header; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "../node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _HeaderGutter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HeaderGutter */ "./components/HeaderGutter.js");
+
+var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\keystone5-next9-site\\site\\components\\Header.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+const Header = props => {
+  return __jsx("header", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    css: props.mq({
+      alignItems: 'center',
+      background: props.background,
+      display: 'flex',
+      paddingLeft: _HeaderGutter__WEBPACK_IMPORTED_MODULE_2__["HeaderGutter"],
+      paddingRight: _HeaderGutter__WEBPACK_IMPORTED_MODULE_2__["HeaderGutter"]
+    })
+  }, props, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: undefined
+  }));
+};
+
+/***/ }),
+
+/***/ "./components/HeaderGutter.js":
+/*!************************************!*\
+  !*** ./components/HeaderGutter.js ***!
+  \************************************/
+/*! exports provided: HeaderGutter */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeaderGutter", function() { return HeaderGutter; });
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../theme */ "./theme.js");
+
+const HeaderGutter = [_theme__WEBPACK_IMPORTED_MODULE_0__["gridSize"] * 2, _theme__WEBPACK_IMPORTED_MODULE_0__["gridSize"] * 6];
+
+/***/ }),
+
 /***/ "./components/Meta.js":
 /*!****************************!*\
   !*** ./components/Meta.js ***!
@@ -6308,6 +6363,190 @@ const Title = props => Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])
   },
   __self: undefined
 }));
+
+/***/ }),
+
+/***/ "./components/NavAnchor.js":
+/*!*********************************!*\
+  !*** ./components/NavAnchor.js ***!
+  \*********************************/
+/*! exports provided: NavAnchor */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavAnchor", function() { return NavAnchor; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "../node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\keystone5-next9-site\\site\\components\\NavAnchor.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+const NavAnchor = props => {
+  console.log('#,:::#', props);
+  const {
+    foreground,
+    gridSize,
+    mq,
+    fontSizes
+  } = props;
+  const paddingHorizontal = [gridSize, gridSize, gridSize * 3];
+  const paddingVertical = gridSize;
+  const slots = {
+    children: props.children,
+    href: props.href
+  };
+  return __jsx("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    css: mq({
+      color: foreground,
+      display: 'inline-block',
+      fontSize: fontSizes.sm,
+      paddingLeft: paddingHorizontal,
+      paddingRight: paddingHorizontal,
+      paddingBottom: paddingVertical,
+      paddingTop: paddingVertical,
+      textDecoration: 'none',
+      ':hover': {
+        textDecoration: 'underline'
+      }
+    })
+  }, slots, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: undefined
+  }));
+};
+
+/***/ }),
+
+/***/ "./components/NavButton.js":
+/*!*********************************!*\
+  !*** ./components/NavButton.js ***!
+  \*********************************/
+/*! exports provided: NavButton */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavButton", function() { return NavButton; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "../node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _NavLink__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./NavLink */ "./components/NavLink.js");
+
+var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\keystone5-next9-site\\site\\components\\NavButton.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+const NavButton = props => __jsx(_NavLink__WEBPACK_IMPORTED_MODULE_2__["NavLink"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+  css: props.mq({
+    backgroundColor: props.themeColor,
+    border: 'none',
+    borderRadius: 40,
+    color: props.foregroundThemeColor,
+    fontWeight: 600,
+    lineHeight: 1,
+    marginRight: [0, 0],
+    padding: '.9rem 2rem'
+  })
+}, props, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 4
+  },
+  __self: undefined
+}));
+
+/***/ }),
+
+/***/ "./components/NavLink.js":
+/*!*******************************!*\
+  !*** ./components/NavLink.js ***!
+  \*******************************/
+/*! exports provided: NavLink */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return NavLink; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "../node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectWithoutProperties */ "../node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "../node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _NavAnchor__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./NavAnchor */ "./components/NavAnchor.js");
+
+
+var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\keystone5-next9-site\\site\\components\\NavLink.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+
+
+const NavLink = (_ref) => {
+  let {
+    href,
+    as
+  } = _ref,
+      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["href", "as"]);
+
+  return __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    href: href,
+    as: as,
+    passHref: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: undefined
+  }, __jsx(_NavAnchor__WEBPACK_IMPORTED_MODULE_4__["NavAnchor"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: undefined
+  })));
+};
+
+/***/ }),
+
+/***/ "./components/NavText.js":
+/*!*******************************!*\
+  !*** ./components/NavText.js ***!
+  \*******************************/
+/*! exports provided: NavText */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavText", function() { return NavText; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "../node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\keystone5-next9-site\\site\\components\\NavText.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+const NavText = props => {
+  const {
+    foreground
+  } = useTheme();
+  return __jsx("span", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    css: {
+      color: foreground,
+      fontSize: fontSizes.sm
+    }
+  }, props, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: undefined
+  }));
+};
 
 /***/ }),
 
@@ -7586,10 +7825,46 @@ const onChange = handler => e => handler(e.target.value);
 
 /***/ }),
 
-/***/ "./containers/Footer.js":
-/*!******************************!*\
-  !*** ./containers/Footer.js ***!
-  \******************************/
+/***/ "./components/index.js":
+/*!*****************************!*\
+  !*** ./components/index.js ***!
+  \*****************************/
+/*! exports provided: Header, HeaderGutter, NavAnchor, NavButton, NavLink, NavText */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Header", function() { return _Header__WEBPACK_IMPORTED_MODULE_0__["Header"]; });
+
+/* harmony import */ var _HeaderGutter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HeaderGutter */ "./components/HeaderGutter.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "HeaderGutter", function() { return _HeaderGutter__WEBPACK_IMPORTED_MODULE_1__["HeaderGutter"]; });
+
+/* harmony import */ var _NavAnchor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./NavAnchor */ "./components/NavAnchor.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NavAnchor", function() { return _NavAnchor__WEBPACK_IMPORTED_MODULE_2__["NavAnchor"]; });
+
+/* harmony import */ var _NavButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./NavButton */ "./components/NavButton.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NavButton", function() { return _NavButton__WEBPACK_IMPORTED_MODULE_3__["NavButton"]; });
+
+/* harmony import */ var _NavLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./NavLink */ "./components/NavLink.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return _NavLink__WEBPACK_IMPORTED_MODULE_4__["NavLink"]; });
+
+/* harmony import */ var _NavText__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./NavText */ "./components/NavText.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NavText", function() { return _NavText__WEBPACK_IMPORTED_MODULE_5__["NavText"]; });
+
+
+
+
+
+
+
+
+/***/ }),
+
+/***/ "./containers/Footer/Footer.js":
+/*!*************************************!*\
+  !*** ./containers/Footer/Footer.js ***!
+  \*************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -7603,12 +7878,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/config */ "next/config");
 /* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _primitives__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../primitives */ "./primitives/index.js");
-/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../theme */ "./theme.js");
-/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../helpers */ "./helpers/index.js");
-/* harmony import */ var _helpers_media__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../helpers/media */ "./helpers/media.js");
+/* harmony import */ var _primitives__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../primitives */ "./primitives/index.js");
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../theme */ "./theme.js");
+/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../helpers */ "./helpers/index.js");
+/* harmony import */ var _helpers_media__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../helpers/media */ "./helpers/media.js");
 
-var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\keystone5-next9-site\\site\\containers\\Footer.js";
+var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\keystone5-next9-site\\site\\containers\\Footer\\Footer.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
@@ -7778,16 +8053,15 @@ const Slant = ({
 
 /***/ }),
 
-/***/ "./containers/Navbar.js":
-/*!******************************!*\
-  !*** ./containers/Navbar.js ***!
-  \******************************/
-/*! exports provided: HEADER_GUTTER, default */
+/***/ "./containers/Navbar/Navbar.js":
+/*!*************************************!*\
+  !*** ./containers/Navbar/Navbar.js ***!
+  \*************************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HEADER_GUTTER", function() { return HEADER_GUTTER; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Navbar; });
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectWithoutProperties */ "../node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutProperties.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "../node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
@@ -7799,19 +8073,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/link */ "../node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _lib_authetication__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../lib/authetication */ "./lib/authetication.js");
-/* harmony import */ var _primitives__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../primitives */ "./primitives/index.js");
-/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../helpers */ "./helpers/index.js");
-/* harmony import */ var _helpers_media__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../helpers/media */ "./helpers/media.js");
-/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../theme */ "./theme.js");
-/* harmony import */ var _components_auth_modal__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/auth/modal */ "./components/auth/modal.js");
+/* harmony import */ var _lib_authetication__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../lib/authetication */ "./lib/authetication.js");
+/* harmony import */ var _primitives__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../primitives */ "./primitives/index.js");
+/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../helpers */ "./helpers/index.js");
+/* harmony import */ var _helpers_media__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../helpers/media */ "./helpers/media.js");
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../theme */ "./theme.js");
+/* harmony import */ var _components_auth_modal__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../components/auth/modal */ "./components/auth/modal.js");
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../components */ "./components/index.js");
 
 
-var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\keystone5-next9-site\\site\\containers\\Navbar.js";
+var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\keystone5-next9-site\\site\\containers\\Navbar\\Navbar.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 /** @jsx jsx */
+
 
 
 
@@ -7832,150 +8108,30 @@ const {
 const {
   meetup
 } = publicRuntimeConfig;
-
-const NavAnchor = props => {
-  const {
-    foreground
-  } = useTheme();
-  const paddingHorizontal = [_theme__WEBPACK_IMPORTED_MODULE_10__["gridSize"], _theme__WEBPACK_IMPORTED_MODULE_10__["gridSize"], _theme__WEBPACK_IMPORTED_MODULE_10__["gridSize"] * 3];
-  const paddingVertical = _theme__WEBPACK_IMPORTED_MODULE_10__["gridSize"];
-  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])("a", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    css: Object(_helpers_media__WEBPACK_IMPORTED_MODULE_9__["mq"])({
-      color: foreground,
-      display: 'inline-block',
-      fontSize: _theme__WEBPACK_IMPORTED_MODULE_10__["fontSizes"].sm,
-      paddingLeft: paddingHorizontal,
-      paddingRight: paddingHorizontal,
-      paddingBottom: paddingVertical,
-      paddingTop: paddingVertical,
-      textDecoration: 'none',
-      ':hover': {
-        textDecoration: 'underline'
-      }
-    })
-  }, props, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: undefined
-  }));
-};
-
-const NavLink = (_ref) => {
-  let {
-    href,
-    as
-  } = _ref,
-      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, ["href", "as"]);
-
-  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    href: href,
-    as: as,
-    passHref: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(NavAnchor, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, props, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: undefined
-  })));
-};
-
-const NavButton = props => Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(NavLink, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-  css: Object(_helpers_media__WEBPACK_IMPORTED_MODULE_9__["mq"])({
-    backgroundColor: meetup.themeColor,
-    border: 'none',
-    borderRadius: 40,
-    color: Object(_helpers__WEBPACK_IMPORTED_MODULE_8__["getForegroundColor"])(meetup.themeColor),
-    fontWeight: 600,
-    lineHeight: 1,
-    marginRight: [0, 0],
-    padding: '.9rem 2rem'
-  })
-}, props, {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 52
-  },
-  __self: undefined
-}));
-
-const NavText = props => {
-  const {
-    foreground
-  } = useTheme();
-  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])("span", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    css: {
-      color: foreground,
-      fontSize: _theme__WEBPACK_IMPORTED_MODULE_10__["fontSizes"].sm
-    }
-  }, props, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69
-    },
-    __self: undefined
-  }));
-};
-
-const HEADER_GUTTER = [_theme__WEBPACK_IMPORTED_MODULE_10__["gridSize"] * 2, _theme__WEBPACK_IMPORTED_MODULE_10__["gridSize"] * 6];
-
-const Header = props => {
-  const {
-    background
-  } = useTheme();
-  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])("header", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    css: Object(_helpers_media__WEBPACK_IMPORTED_MODULE_9__["mq"])({
-      alignItems: 'center',
-      background: background,
-      display: 'flex',
-      paddingLeft: HEADER_GUTTER,
-      paddingRight: HEADER_GUTTER
-    })
-  }, props, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 78
-    },
-    __self: undefined
-  }));
-};
-
 const hideOnMobile = Object(_helpers_media__WEBPACK_IMPORTED_MODULE_9__["mq"])({
   display: ['none', 'none', 'initial']
 }); // TODO: Implement log out
 
 const UserActions = ({
-  user
+  user,
+  navLinksProps
 }) => {
   const {
     signout
   } = Object(_lib_authetication__WEBPACK_IMPORTED_MODULE_6__["useAuth"])();
-
-  const onSignout = event => {
-    event.preventDefault();
-    signout();
-  };
-
   return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 32
     },
     __self: undefined
-  }, user.isAdmin && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(NavAnchor, {
+  }, user.isAdmin && Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(_components__WEBPACK_IMPORTED_MODULE_12__["NavAnchor"], {
     css: hideOnMobile,
     href: "/admin",
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 34
     },
     __self: undefined
   }, "Dashboard"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])("span", {
@@ -7985,89 +8141,96 @@ const UserActions = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 38
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(NavText, {
     css: hideOnMobile,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 39
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112
+      lineNumber: 40
     },
     __self: undefined
-  }, user.name)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(NavLink, {
+  }, user.name)), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(_components__WEBPACK_IMPORTED_MODULE_12__["NavLink"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     href: "/signout",
-    title: "Sign Out",
-    onClick: onSignout,
+    onClick: onSignout
+  }, navLinksProps, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 42
     },
     __self: undefined
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(_primitives__WEBPACK_IMPORTED_MODULE_7__["SignoutIcon"], {
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(_primitives__WEBPACK_IMPORTED_MODULE_7__["SignoutIcon"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115
+      lineNumber: 43
     },
     __self: undefined
   }))));
 };
 
-const AnonActions = () => {
+const onSignout = event => {
+  event.preventDefault();
+  signout();
+};
+
+const AnonActions = ({
+  navLinksProps
+}) => {
   return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124
+      lineNumber: 57
     },
     __self: undefined
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(_components_auth_modal__WEBPACK_IMPORTED_MODULE_11__["default"], {
     mode: "signin",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 58
     },
     __self: undefined
   }, ({
     openModal
-  }) => Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(NavLink, {
+  }) => Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(_components__WEBPACK_IMPORTED_MODULE_12__["NavLink"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, navLinksProps, {
     href: "/signin",
     onClick: openModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 127
+      lineNumber: 60
     },
     __self: undefined
-  }, "Sign in")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(_components_auth_modal__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  }), "Sign in")), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(_components_auth_modal__WEBPACK_IMPORTED_MODULE_11__["default"], {
     mode: "signup",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132
+      lineNumber: 65
     },
     __self: undefined
   }, ({
     openModal
-  }) => Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(NavButton, {
+  }) => Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(_components__WEBPACK_IMPORTED_MODULE_12__["NavButton"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, navLinksProps, {
     href: "/signup",
     onClick: openModal,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 134
+      lineNumber: 67
     },
     __self: undefined
-  }, "Join")));
+  }), "Join")));
 };
 
-function Navbar(_ref2) {
+function Navbar(_ref) {
   let {
     background = 'white'
-  } = _ref2,
-      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref2, ["background"]);
+  } = _ref,
+      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, ["background"]);
 
   const {
     isAuthenticated,
@@ -8080,6 +8243,19 @@ function Navbar(_ref2) {
     logoHeightSm
   } = Object(_helpers__WEBPACK_IMPORTED_MODULE_8__["useLogoDimension"])();
   const foreground = Object(_helpers__WEBPACK_IMPORTED_MODULE_8__["getForegroundColor"])(background);
+  const {
+    themeColor
+  } = meetup;
+  const foregroundThemeColor = Object(_helpers__WEBPACK_IMPORTED_MODULE_8__["getForegroundColor"])(meetup.themeColor);
+  console.log(_helpers_media__WEBPACK_IMPORTED_MODULE_9__["mq"]);
+  const navLinksProps = {
+    foreground,
+    gridSize: _theme__WEBPACK_IMPORTED_MODULE_10__["gridSize"],
+    mq: _helpers_media__WEBPACK_IMPORTED_MODULE_9__["mq"],
+    fontSizes: _theme__WEBPACK_IMPORTED_MODULE_10__["fontSizes"],
+    themeColor,
+    foregroundThemeColor
+  };
   return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(ThemeContext.Provider, {
     value: {
       background,
@@ -8087,13 +8263,16 @@ function Navbar(_ref2) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149
+      lineNumber: 94
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(Header, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, props, {
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(_components__WEBPACK_IMPORTED_MODULE_12__["Header"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    mq: _helpers_media__WEBPACK_IMPORTED_MODULE_9__["mq"],
+    background: background
+  }, props, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 150
+      lineNumber: 95
     },
     __self: this
   }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -8101,13 +8280,13 @@ function Navbar(_ref2) {
     passHref: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 151
+      lineNumber: 96
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 152
+      lineNumber: 97
     },
     __self: this
   }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])("img", {
@@ -8117,13 +8296,14 @@ function Navbar(_ref2) {
     alt: meetup.name,
     css: Object(_helpers_media__WEBPACK_IMPORTED_MODULE_9__["mq"])({
       // boxShadow: shadows.sm,
+      paddingTop: 3,
       marginRight: [_theme__WEBPACK_IMPORTED_MODULE_10__["gridSize"], _theme__WEBPACK_IMPORTED_MODULE_10__["gridSize"] * 2],
       width: [logoWidthSm, logoWidth],
       height: [logoHeightSm, logoHeight]
     }),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 153
+      lineNumber: 98
     },
     __self: this
   }))), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])("div", {
@@ -8132,41 +8312,46 @@ function Navbar(_ref2) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 167
+      lineNumber: 113
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(NavLink, {
-    href: "/",
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(_components__WEBPACK_IMPORTED_MODULE_12__["NavLink"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    href: "/"
+  }, navLinksProps, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 168
+      lineNumber: 114
     },
     __self: this
-  }, "Home"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(NavLink, {
-    href: "/about",
+  }), "Home"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(_components__WEBPACK_IMPORTED_MODULE_12__["NavLink"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    href: "/about"
+  }, navLinksProps, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 169
+      lineNumber: 115
     },
     __self: this
-  }, "About"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(NavLink, {
-    href: "/events",
+  }), "About"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(_components__WEBPACK_IMPORTED_MODULE_12__["NavLink"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    href: "/events"
+  }, navLinksProps, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 170
+      lineNumber: 116
     },
     __self: this
-  }, "Events")), isAuthenticated ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(UserActions, {
+  }), "Events")), isAuthenticated ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(UserActions, {
     user: user,
+    navLinksProps: navLinksProps,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 172
+      lineNumber: 118
     },
     __self: this
   }) : Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(AnonActions, {
+    navLinksProps: navLinksProps,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 172
+      lineNumber: 118
     },
     __self: this
   })));
@@ -8184,38 +8369,14 @@ function Navbar(_ref2) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Footer */ "./containers/Footer.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Footer", function() { return _Footer__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+/* harmony import */ var _Footer_Footer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Footer/Footer */ "./containers/Footer/Footer.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Footer", function() { return _Footer_Footer__WEBPACK_IMPORTED_MODULE_0__["default"]; });
 
-/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./containers/Navbar.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Navbar", function() { return _Navbar__WEBPACK_IMPORTED_MODULE_1__["default"]; });
+/* harmony import */ var _Navbar_Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar/Navbar */ "./containers/Navbar/Navbar.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Navbar", function() { return _Navbar_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"]; });
 
-// export About from './About/About';
-// export App from './App/App';
-// export Careers from './Careers/Careers';
-// export Contact from './Contact/Contact';
-// export Front from './Front/index';
-// export FrequentlyAsked from './FrequentlyAsked/FrequentlyAsked';
-// export Gdpr from './Gdpr/Gdpr';
-// export Legal from './Legal/Legal';
-// export Footer from './Footer/Footer';
-// export Navbar from './Navbar/Navbar';
-// export NotFound from './NotFound/NotFound';
-// export ProjectDetails from './ProjectDetails/ProjectDetails';
-// export ProjectPreview from './ProjectPreview/ProjectPreview';
-// export Work from './Work/index';
-// export Services from './Services/Services';
-// export { default as Footer } from './Footer';
-// export { default as Navbar } from './Footer';
 
- // export { default as Loading } from './Loading';
-// export { default as Error } from './Error';
-// export { Avatar } from './Avatar';
-// export { AvatarStack } from './Avatar';
-// export { Html } from './Html';
-// export { Hero } from './Hero';
-// export * from './Icon';
-// export * from './Typography';
+
 
 /***/ }),
 
