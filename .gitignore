@@ -3,6 +3,7 @@ node_modules/*
 .env*
 !.env.example
 ngrok.yml
+site/.next/cache/*
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
