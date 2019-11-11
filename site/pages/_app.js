@@ -38,7 +38,6 @@ class MyApp extends App {
     const { Component, pageProps, apolloClient, user } = this.props;
     return (
       <ToastProvider>
-        <Container>
           <ApolloProvider client={apolloClient}>
             <AuthProvider initialUserValue={user}>
               <Head>
@@ -52,7 +51,6 @@ class MyApp extends App {
               <Component {...pageProps} />
             </AuthProvider>
           </ApolloProvider>
-        </Container>
         <GoogleAnalytics />
       </ToastProvider>
     );

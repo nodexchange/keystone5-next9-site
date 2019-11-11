@@ -4792,7 +4792,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/config */ "next/config");
 /* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\arc-keystone5\\site\\components\\GoogleAnalytics.js";
+var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\keystone5-next9-site\\site\\components\\GoogleAnalytics.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -4854,7 +4854,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! graphql-tag */ "graphql-tag");
 /* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(graphql_tag__WEBPACK_IMPORTED_MODULE_3__);
 
-var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\arc-keystone5\\site\\lib\\authetication.js";
+var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\keystone5-next9-site\\site\\lib\\authetication.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -5152,7 +5152,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\arc-keystone5\\site\\lib\\withApollo.js";
+var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\keystone5-next9-site\\site\\lib\\withApollo.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement;
 
 /* This code is lifted from the Next.js Apollo example. See
@@ -5269,7 +5269,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _primitives_StylesBase__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../primitives/StylesBase */ "./primitives/StylesBase.js");
 /* harmony import */ var _components_GoogleAnalytics__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/GoogleAnalytics */ "./components/GoogleAnalytics.js");
 
-var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\arc-keystone5\\site\\pages\\_app.js";
+var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\keystone5-next9-site\\site\\pages\\_app.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -5324,30 +5324,24 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_2___default.a {
         lineNumber: 40
       },
       __self: this
-    }, __jsx(next_app__WEBPACK_IMPORTED_MODULE_2__["Container"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 41
-      },
-      __self: this
     }, __jsx(react_apollo__WEBPACK_IMPORTED_MODULE_5__["ApolloProvider"], {
       client: apolloClient,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42
+        lineNumber: 41
       },
       __self: this
     }, __jsx(_lib_authetication__WEBPACK_IMPORTED_MODULE_8__["AuthProvider"], {
       initialUserValue: user,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43
+        lineNumber: 42
       },
       __self: this
     }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44
+        lineNumber: 43
       },
       __self: this
     }, __jsx("link", {
@@ -5356,7 +5350,7 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_2___default.a {
       type: "image/x-icon",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 45
+        lineNumber: 44
       },
       __self: this
     }), __jsx("meta", {
@@ -5364,25 +5358,25 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_2___default.a {
       content: "width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 46
+        lineNumber: 45
       },
       __self: this
     })), __jsx(_primitives_StylesBase__WEBPACK_IMPORTED_MODULE_9__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 51
+        lineNumber: 50
       },
       __self: this
     }), __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52
+        lineNumber: 51
       },
       __self: this
-    }))))), __jsx(_components_GoogleAnalytics__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    })))), __jsx(_components_GoogleAnalytics__WEBPACK_IMPORTED_MODULE_10__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56
+        lineNumber: 54
       },
       __self: this
     }));
@@ -5408,7 +5402,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\arc-keystone5\\site\\primitives\\StylesBase.js";
+var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\keystone5-next9-site\\site\\primitives\\StylesBase.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 

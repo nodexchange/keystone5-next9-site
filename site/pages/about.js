@@ -5,8 +5,7 @@ import getConfig from 'next/config';
 import { jsx } from '@emotion/core';
 
 import { Avatar, Container, Error, H1, H2, H3, Html, Loading } from '../primitives';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import { Footer, Navbar } from '../containers';
 import Meta from '../components/Meta';
 import { colors, gridSize } from '../theme';
 import { GET_ORGANISERS } from '../graphql/organisers';

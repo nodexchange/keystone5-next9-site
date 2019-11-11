@@ -4,9 +4,9 @@ const MEETUP = {
   siteUrl: 'https://meetup.keystonejs.com/',
   themeColor: '#2377E7',
   logo: {
-    src: '/static/logo.png',
-    width: 96,
-    height: 96,
+    src: '/static/logo-arc.png',
+    width: 250,
+    height: 41,
   },
   homeIntro: `
 <p>Welcome to the KeystoneJS Meetup!  Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>

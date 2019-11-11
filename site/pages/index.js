@@ -5,8 +5,7 @@ import { jsx } from '@emotion/core';
 
 import Link from 'next/link';
 import EventItems from '../components/EventItems';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import { Footer, Navbar } from '../containers';
 import Meta from '../components/Meta';
 import { GET_CURRENT_EVENTS } from '../graphql/events';
 import { GET_EVENT_RSVPS } from '../graphql/rsvps';
@@ -276,7 +275,7 @@ export default class Home extends Component {
           return (
             <div>
               <Meta titleExclusive={meetup.name} description={meetup.intro} />
-              <Navbar background={colors.greyDark} />
+              <Navbar background={colors.greyLight} />
               <Hero title={meetup.name}>
                 <Html markup={meetup.homeIntro} />
               </Hero>

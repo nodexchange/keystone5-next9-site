@@ -6,8 +6,7 @@ import { Query } from 'react-apollo';
 
 import { Container, Loading, H2 } from '../primitives';
 import EventItems from '../components/EventItems';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import { Footer, Navbar } from '../containers';
 import Meta from '../components/Meta';
 import { gridSize } from '../theme';
 

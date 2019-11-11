@@ -21189,12 +21189,12 @@ module.exports = function(module) {
 
 /***/ "../node_modules/object-assign/index.js":
 /*!****************************************************************************************************!*\
-  !*** delegated ../node_modules/object-assign/index.js from dll-reference dll_9fc55667c881d82f782e ***!
+  !*** delegated ../node_modules/object-assign/index.js from dll-reference dll_0dc08b54a9953be006f4 ***!
   \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_9fc55667c881d82f782e */ "dll-reference dll_9fc55667c881d82f782e"))("../node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_0dc08b54a9953be006f4 */ "dll-reference dll_0dc08b54a9953be006f4"))("../node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -21899,12 +21899,12 @@ process.umask = function() { return 0; };
 
 /***/ "../node_modules/prop-types/checkPropTypes.js":
 /*!**********************************************************************************************************!*\
-  !*** delegated ../node_modules/prop-types/checkPropTypes.js from dll-reference dll_9fc55667c881d82f782e ***!
+  !*** delegated ../node_modules/prop-types/checkPropTypes.js from dll-reference dll_0dc08b54a9953be006f4 ***!
   \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_9fc55667c881d82f782e */ "dll-reference dll_9fc55667c881d82f782e"))("../node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_0dc08b54a9953be006f4 */ "dll-reference dll_0dc08b54a9953be006f4"))("../node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -22539,12 +22539,12 @@ if (true) {
 
 /***/ "../node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!********************************************************************************************************************!*\
-  !*** delegated ../node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_9fc55667c881d82f782e ***!
+  !*** delegated ../node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_0dc08b54a9953be006f4 ***!
   \********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_9fc55667c881d82f782e */ "dll-reference dll_9fc55667c881d82f782e"))("../node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_0dc08b54a9953be006f4 */ "dll-reference dll_0dc08b54a9953be006f4"))("../node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -27143,12 +27143,12 @@ module.exports = server_browser;
 
 /***/ "../node_modules/react-dom/index.js":
 /*!************************************************************************************************!*\
-  !*** delegated ../node_modules/react-dom/index.js from dll-reference dll_9fc55667c881d82f782e ***!
+  !*** delegated ../node_modules/react-dom/index.js from dll-reference dll_0dc08b54a9953be006f4 ***!
   \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_9fc55667c881d82f782e */ "dll-reference dll_9fc55667c881d82f782e"))("../node_modules/react-dom/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_0dc08b54a9953be006f4 */ "dll-reference dll_0dc08b54a9953be006f4"))("../node_modules/react-dom/index.js");
 
 /***/ }),
 
@@ -30282,12 +30282,12 @@ exports.classNamesShape = classNamesShape;
 
 /***/ "../node_modules/react/index.js":
 /*!********************************************************************************************!*\
-  !*** delegated ../node_modules/react/index.js from dll-reference dll_9fc55667c881d82f782e ***!
+  !*** delegated ../node_modules/react/index.js from dll-reference dll_0dc08b54a9953be006f4 ***!
   \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_9fc55667c881d82f782e */ "dll-reference dll_9fc55667c881d82f782e"))("../node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_0dc08b54a9953be006f4 */ "dll-reference dll_0dc08b54a9953be006f4"))("../node_modules/react/index.js");
 
 /***/ }),
 
@@ -32856,7 +32856,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/config */ "../node_modules/next/dist/next-server/lib/runtime-config.js");
 /* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\arc-keystone5\\site\\components\\GoogleAnalytics.js";
+var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\keystone5-next9-site\\site\\components\\GoogleAnalytics.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -32927,7 +32927,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\arc-keystone5\\site\\lib\\authetication.js";
+var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\keystone5-next9-site\\site\\lib\\authetication.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement;
 
 function _templateObject3() {
@@ -33363,7 +33363,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\arc-keystone5\\site\\lib\\withApollo.js";
+var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\keystone5-next9-site\\site\\lib\\withApollo.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement;
 
 /* This code is lifted from the Next.js Apollo example. See
@@ -33549,7 +33549,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\arc-keystone5\\site\\pages\\_app.js";
+var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\keystone5-next9-site\\site\\pages\\_app.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement;
 
 function _templateObject() {
@@ -33598,30 +33598,24 @@ function (_App) {
           lineNumber: 40
         },
         __self: this
-      }, __jsx(next_app__WEBPACK_IMPORTED_MODULE_10__["Container"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 41
-        },
-        __self: this
       }, __jsx(react_apollo__WEBPACK_IMPORTED_MODULE_13__["ApolloProvider"], {
         client: apolloClient,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 41
         },
         __self: this
       }, __jsx(_lib_authetication__WEBPACK_IMPORTED_MODULE_16__["AuthProvider"], {
         initialUserValue: user,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 42
         },
         __self: this
       }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_11___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 43
         },
         __self: this
       }, __jsx("link", {
@@ -33630,7 +33624,7 @@ function (_App) {
         type: "image/x-icon",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 44
         },
         __self: this
       }), __jsx("meta", {
@@ -33638,25 +33632,25 @@ function (_App) {
         content: "width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 45
         },
         __self: this
       })), __jsx(_primitives_StylesBase__WEBPACK_IMPORTED_MODULE_17__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 50
         },
         __self: this
       }), __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_3__["default"])({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 51
         },
         __self: this
-      }))))), __jsx(_components_GoogleAnalytics__WEBPACK_IMPORTED_MODULE_18__["default"], {
+      })))), __jsx(_components_GoogleAnalytics__WEBPACK_IMPORTED_MODULE_18__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 54
         },
         __self: this
       }));
@@ -33738,7 +33732,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/core */ "../node_modules/@emotion/core/dist/core.browser.esm.js");
 
-var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\arc-keystone5\\site\\primitives\\StylesBase.js";
+var _jsxFileName = "C:\\Users\\wojtalam\\Workspace\\Github\\keystone5-next9-site\\site\\primitives\\StylesBase.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 function _templateObject2() {
@@ -33777,14 +33771,14 @@ var normalize = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"])(_templ
 
 /***/ }),
 
-/***/ "dll-reference dll_9fc55667c881d82f782e":
+/***/ "dll-reference dll_0dc08b54a9953be006f4":
 /*!*******************************************!*\
-  !*** external "dll_9fc55667c881d82f782e" ***!
+  !*** external "dll_0dc08b54a9953be006f4" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_9fc55667c881d82f782e;
+module.exports = dll_0dc08b54a9953be006f4;
 
 /***/ })
 

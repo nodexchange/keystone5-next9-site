@@ -6,7 +6,7 @@ import { jsx } from '@emotion/core';
 import { useKeydown, useLogoDimension } from '../helpers';
 import { mq } from '../helpers/media';
 import { XIcon } from '../primitives';
-import { HEADER_GUTTER } from './Navbar';
+// import { HEADER_GUTTER } from '../Containers/Navbar';
 import { colors, fontSizes } from '../theme';
 
 // ==============================
@@ -55,7 +55,8 @@ const canUseDOM = !!(
 const Dialog = ({ ariaLabel, ...props }) => {
   const { logoHeight, logoHeightSm } = useLogoDimension();
   const offsetTop = [logoHeightSm, logoHeight];
-  const offsetRight = HEADER_GUTTER;
+  // const offsetRight = HEADER_GUTTER ; 
+  const offsetRight = 20; 
 
   return (
     <div
