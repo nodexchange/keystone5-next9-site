@@ -1,8 +1,13 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/core';
+
 import { NavLink } from './NavLink';
+import { mq } from '../helpers/media';
 
 export const NavButton = props => (
+  // console.log(prop.themeColor)
   <NavLink
-    css={props.mq({
+    css={mq({
       backgroundColor: props.themeColor,
       border: 'none',
       borderRadius: 40,

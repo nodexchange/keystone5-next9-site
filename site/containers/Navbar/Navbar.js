@@ -80,11 +80,9 @@ export default function Navbar({ background = 'white', ...props }) {
   const { themeColor } = meetup;
   const foregroundThemeColor = getForegroundColor(meetup.themeColor);
   
-  console.log(mq);
   const navLinksProps = {
     foreground, 
     gridSize, 
-    mq, 
     fontSizes,
     themeColor,
     foregroundThemeColor
@@ -92,7 +90,7 @@ export default function Navbar({ background = 'white', ...props }) {
 
   return (
     <ThemeContext.Provider value={{ background, foreground }}>
-      <Header mq={mq} background={background} {...props} >
+      <Header background={background} {...props} >
         <Link href="/" passHref>
           <a>
             <img

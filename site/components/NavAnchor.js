@@ -1,13 +1,16 @@
-export const NavAnchor = props => {
+/** @jsx jsx */
+import { jsx } from '@emotion/core';
 
-  console.log('#,:::#', props);
-  
-  const { foreground, gridSize, mq, fontSizes } = props;
+import { mq } from '../helpers/media';
+
+export const NavAnchor = props => {
+  const { className, foreground, gridSize, fontSizes } = props;
   const paddingHorizontal = [gridSize, gridSize, gridSize * 3];
   const paddingVertical = gridSize;
   const slots  = {
     children: props.children,
-    href: props.href
+    href: props.href,
+    className: className
   } 
 
   return (
