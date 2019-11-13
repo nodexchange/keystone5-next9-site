@@ -5,7 +5,7 @@ import { mq } from '../helpers/media';
 
 export const NavAnchor = props => {
   const { className, foreground, gridSize, fontSizes } = props;
-  const paddingHorizontal = [gridSize, gridSize, gridSize * 3];
+  const paddingHorizontal = [gridSize / 3, gridSize / 2, gridSize * 2, gridSize * 3];
   const paddingVertical = gridSize;
   const slots  = {
     children: props.children,

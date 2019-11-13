@@ -6,7 +6,7 @@ import { Query } from 'react-apollo';
 import Rsvp from '../../components/Rsvp';
 import { Avatar, Container, Error, Hero, H1, H2, Html, Loading } from '../../primitives';
 import Talks from '../../components/Talks';
-import { Footer, Navbar } from '../containers';
+import { Footer, Navbar } from '../../containers';
 import Meta, { makeMetaUrl } from '../../components/Meta';
 import { fontSizes, gridSize } from '../../theme';
 import { GET_EVENT_DETAILS } from '../../graphql/events';
