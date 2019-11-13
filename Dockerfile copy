@@ -1,0 +1,31 @@
+#FROM mhart/alpine-node
+#FROM mhart/alpine-node:4
+FROM mhart/alpine-node:12
+#FROM mhart/alpine-node:0.10
+
+# install packages needed by node-gyp and keystone->mongoose->mongodb->kerberos
+RUN apk --no-cache add python build-base git
+
+# pretemp action
+COPY package.json /tmp/package.json
+RUN cd /tmp && npm install --production
+RUN mkdir -p /usr/src/app && cp -a /tmp/node_modules /usr/src/app
+
+WORKDIR  /usr/src/app
+COPY .  /usr/src/app
+
+# Create app directory
+# RUN mkdir -p /usr/src/app
+# WORKDIR /usr/src/app
+
+# Install app dependencies
+# COPY package.json /usr/src/app/
+# RUN npm install -g node-gyp
+
+# Bundle app source
+# COPY . /usr/src/app
+# RUN npm install --production --registry=http://52.4.23.175:4873/
+
+EXPOSE 3000
+RUN npm run build
+CMD [ "npm", "start" ]

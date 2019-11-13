@@ -1,12 +1,19 @@
 FROM mhart/alpine-node:12
 
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app/
-COPY package.json /usr/src/app/
+RUN mkdir -p /usr/src/app2 
 
-RUN npm install
+WORKDIR /usr/src/app2
+COPY package*.json ./
+RUN npm install --production
+RUN echo "STEP 1: INSTALL COMPLETED ------>>"
+COPY . .
+RUN echo "STEP 2: COPY COMPLETED ------>>"
 RUN npm run build
+RUN echo "STEP 3: BUILD COMPLETED ------>>"
 
-EXPOSE 3000
+CMD [ "npm", "start" ]
 
-CMD ["npm", "start"]
+# FROM nginx
+# EXPOSE 4000
+# COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
+# COPY --from=builder /usr/src/app/dist/spa /usr/share/nginx/html
