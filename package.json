@@ -2,7 +2,7 @@
   "name": "@keystonejs/demo-project-meetup",
   "description": "An example KeystoneJS project showcasing a Meetup Site.",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "The KeystoneJS Development Team",
   "license": "MIT",
   "engines": {

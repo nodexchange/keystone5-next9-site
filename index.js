@@ -11,7 +11,7 @@ const { Event, Talk, User, Rsvp, Organiser, Sponsor, ForgottenPasswordToken } = 
 
 const SITE = require('./site/config/site');
 const initialiseData = require('./initialData');
-
+console.log('_+_+_+_+', process.env.MONGODB_URI);
 const keystone = new Keystone({
   name: SITE.name,
   adapter: new MongooseAdapter(),

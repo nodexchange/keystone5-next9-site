@@ -19,14 +19,14 @@ services:
     ports:
       - 3000:3000
 
-  nginx:
-    env_file:
-      - ./.env
-    build:
-      context: ./nginx/
-      dockerfile: Dockerfile
-    container_name: "nginx"
-    depends_on:
-      - website-client
-    ports:
-      - '3000:80'
+  # nginx:
+  #   env_file:
+  #     - ./.env
+  #   build:
+  #     context: ./nginx/
+  #     dockerfile: Dockerfile
+  #   container_name: "nginx"
+  #   depends_on:
+  #     - website-client
+  #   ports:
+  #     - '3000:80'
