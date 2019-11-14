@@ -2,22 +2,20 @@ version: '3'
 services:
   mongo:
     image: "mongo:4.0.4"
-    container_name: "mongo4"
+    container_name: "mongo"
     ports:
-      - '27017-27019:27017-27019'
+      - '28019:27017'
 
-  website-client:
-    env_file:
-      - ./.env
-    build:
-      context: ./
-      dockerfile: Dockerfile
-    links:
-      - mongo
-    depends_on:
-      - mongo
-    ports:
-      - 3000:3000
+  # website-client:
+  #   env_file:
+  #     - ./.env
+  #   build:
+  #     context: ./
+  #     dockerfile: Dockerfile
+  #   links:
+  #     - mongo
+  #   ports:
+  #     - 3000:3000
 
   # nginx:
   #   env_file:

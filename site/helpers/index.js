@@ -13,8 +13,14 @@ const {
 export const isInFuture = date => isFuture(parseISO(date));
 
 // Pretty date formatting
-export const formatFutureDate = date => format(parseISO(date), 'DD.MM');
-export const formatPastDate = date => format(parseISO(date), 'MM.YY');
+export const formatFutureDate = date => format(parseISO(date), 'ddd d MMM, h:mm a');
+export const formatPastDate = date => {
+  console.log(parseISO(date), parseISO('MMM yyyy'));
+  return format(parseISO(date), parseISO('MMM yyyy'));
+}
+
+// export const formatFutureDate = date => format(date, 'ddd D MMM, h:mm A');
+// export const formatPastDate = date => format(date, 'MMM YYYY');
 
 // Singular / Plural
 export const pluralLabel = (num, single, plural) => {
