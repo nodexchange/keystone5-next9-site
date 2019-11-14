@@ -1,11 +1,6 @@
 dist/*
 node_modules/*
-.env*
-!.env.example
 ngrok.yml
-.*
-!.env.example
-!.dockerignore
 !.gitignore
 
 # Elastic Beanstalk Files
