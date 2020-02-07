@@ -2,7 +2,9 @@ version: "3"
 services:
   mongo:
     image: "mongo:4.0.4"
-    container_name: "mongo"
+    container_name: "mongo-rmd-local"
+    volumes:
+      - ./mongo-volume:/data/db
     ports:
       - "28019:27017"
   # app:

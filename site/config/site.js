@@ -4,9 +4,9 @@ const MEETUP = {
   siteUrl: 'https://meetup.keystonejs.com/',
   themeColor: '#2377E7',
   logo: {
-    src: '/static/logo-arc.png',
-    width: 250,
-    height: 41,
+    src: '/static/rmdlogo2.png',
+    width: 200,
+    height: 111
   },
   homeIntro: `
 <p>Welcome to the KeystoneJS Meetup!  Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
@@ -40,9 +40,9 @@ const MEETUP = {
 <p>If you run a meetup, please feel free to clone our site and make your own!
   <a href="https://github.com/keystonejs/keystone-5/tree/master/demo-projects/meetup">You can find it on GitHub</a>.
 </p>
-`,
+`
   },
-  aboutIntro: `<p>Every 3rd Wednesday of the month you'll find us talking about what we're doing and what's happening around us in the world of lorem ipsum.</p>`,
+  aboutIntro: `<p>Every 3rd Wednesday of the month you'll find us talking about what we're doing and what's happening around us in the world of lorem ipsum.</p>`
 };
 
 module.exports = MEETUP;

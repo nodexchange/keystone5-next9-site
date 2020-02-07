@@ -75,8 +75,7 @@ const FeaturedEvent = ({ isLoading, error, event }) => {
           css={{
             backgroundColor: themeColor,
             color: getForegroundColor(themeColor),
-            display: 'block',
-            padding: '2rem'
+            display: 'block'
           }}>
           <div css={mq({ display: 'flex', flexDirection: ['column', 'row'] })}>
             <div
@@ -124,7 +123,7 @@ const FeaturedEvent = ({ isLoading, error, event }) => {
               markup={description}
               css={mq({
                 flex: 1,
-                padding: [0, '0 2rem'],
+                padding: [0, 0],
 
                 p: {
                   '&:first-of-type': { marginTop: 0 },

@@ -1,22 +1,21 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
+import { useContext, createContext } from 'react';
 
 import { mq } from '../helpers/media';
+import { fontSizes, gridSize } from '../theme';
+const ThemeContext = createContext();
+const useTheme = () => useContext(ThemeContext);
 
 export const NavAnchor = props => {
-  const { className, foreground, gridSize, fontSizes } = props;
-  const paddingHorizontal = [gridSize / 3, gridSize / 2, gridSize * 2, gridSize * 3];
+  // const { foreground } = useTheme();
+  const paddingHorizontal = [gridSize, gridSize, gridSize * 3];
   const paddingVertical = gridSize;
-  const slots  = {
-    children: props.children,
-    href: props.href,
-    className: className
-  } 
 
   return (
     <a
       css={mq({
-        color: foreground,
+        color: 'white',
         display: 'inline-block',
         fontSize: fontSizes.sm,
         paddingLeft: paddingHorizontal,
@@ -26,10 +25,10 @@ export const NavAnchor = props => {
         textDecoration: 'none',
 
         ':hover': {
-          textDecoration: 'underline',
-        },
+          textDecoration: 'underline'
+        }
       })}
-      {...slots}
+      {...props}
     />
   );
 };

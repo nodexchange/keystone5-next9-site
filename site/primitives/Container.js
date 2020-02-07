@@ -4,7 +4,7 @@ import { jsx } from '@emotion/core';
 import PropTypes from 'prop-types';
 import { mq } from '../helpers/media';
 
-export const CONTAINER_GUTTER = ['1rem', '2rem'];
+export const CONTAINER_GUTTER = [0, 0];
 
 export default function Container({ width, ...props }) {
   return (
@@ -14,7 +14,7 @@ export default function Container({ width, ...props }) {
         marginRight: 'auto',
         paddingLeft: CONTAINER_GUTTER,
         paddingRight: CONTAINER_GUTTER,
-        maxWidth: width,
+        maxWidth: width
       })}
       {...props}
     />
@@ -22,8 +22,8 @@ export default function Container({ width, ...props }) {
 }
 
 Container.propTypes = {
-  width: PropTypes.number,
+  width: PropTypes.number
 };
 Container.defaultProps = {
-  width: 1000,
+  width: 1000
 };

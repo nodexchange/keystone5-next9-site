@@ -1,4 +1,3 @@
-
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
 
@@ -9,11 +8,9 @@ export const Header = props => {
   return (
     <header
       css={mq({
-        alignItems: 'center',
-        background: props.background,
-        display: 'flex',
-        paddingLeft: HeaderGutter,
-        paddingRight: HeaderGutter,
+        position: 'fixed',
+        zIndex: 2000,
+        width: '100%'
       })}
       {...props}
     />
