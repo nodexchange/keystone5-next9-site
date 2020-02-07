@@ -2,7 +2,8 @@ dist/*
 node_modules/*
 ngrok.yml
 !.gitignore
-
+.git
+.gitignore
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml

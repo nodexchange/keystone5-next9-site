@@ -22,7 +22,7 @@ import {
   Loading,
   MicrophoneIcon,
   PinIcon,
-  UserIcon,
+  UserIcon
 } from '../primitives';
 import { H2, H3 } from '../primitives/Typography';
 import { colors, gridSize, fontSizes } from '../theme';
@@ -31,7 +31,7 @@ import {
   formatFutureDate,
   formatPastDate,
   getForegroundColor,
-  pluralLabel,
+  pluralLabel
 } from '../helpers';
 import { mq } from '../helpers/media';
 import { Component } from 'react';
@@ -51,7 +51,17 @@ const FeaturedEvent = ({ isLoading, error, event }) => {
     return null;
   }
 
-  const { description, id, locationAddress, maxRsvps, name, startTime, talks, themeColor } = event;
+  const {
+    description,
+    id,
+    locationAddress,
+    maxRsvps,
+    name,
+    startTime,
+    talks,
+    themeColor
+  } = event;
+  console.log(startTime);
   const prettyDate = isInFuture(startTime)
     ? formatFutureDate(startTime)
     : formatPastDate(startTime);
@@ -66,42 +76,46 @@ const FeaturedEvent = ({ isLoading, error, event }) => {
             backgroundColor: themeColor,
             color: getForegroundColor(themeColor),
             display: 'block',
-            padding: '2rem',
-          }}
-        >
+            padding: '2rem'
+          }}>
           <div css={mq({ display: 'flex', flexDirection: ['column', 'row'] })}>
             <div
               css={{
                 flex: 1,
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContent: 'space-between',
-              }}
-            >
+                justifyContent: 'space-between'
+              }}>
               <div>
                 <p
                   css={{
                     textTransform: 'uppercase',
                     marginTop: 0,
                     fontWeight: 500,
-                    marginBottom: gridSize,
-                  }}
-                >
+                    marginBottom: gridSize
+                  }}>
                   {prettyDate}
                 </p>
-                <Link href={`/event/[id]?hex=${hex}`} as={`/event/${id}?hex=${hex}`} passHref>
+                <Link
+                  href={`/event/[id]?hex=${hex}`}
+                  as={`/event/${id}?hex=${hex}`}
+                  passHref>
                   <a
                     css={{
                       color: 'inherit',
                       textDecoration: 'none',
-                      ':hover': { textDecoration: 'underline' },
-                    }}
-                  >
+                      ':hover': { textDecoration: 'underline' }
+                    }}>
                     <H3>{name}</H3>
                   </a>
                 </Link>
               </div>
-              <p css={{ alignItems: 'center', display: 'flex', fontWeight: 300 }}>
+              <p
+                css={{
+                  alignItems: 'center',
+                  display: 'flex',
+                  fontWeight: 300
+                }}>
                 <PinIcon css={{ marginRight: '0.5em' }} />
                 {locationAddress}
               </p>
@@ -114,8 +128,8 @@ const FeaturedEvent = ({ isLoading, error, event }) => {
 
                 p: {
                   '&:first-of-type': { marginTop: 0 },
-                  '&:last-of-type': { marginBottom: 0 },
-                },
+                  '&:last-of-type': { marginBottom: 0 }
+                }
               })}
             />
           </div>
@@ -126,9 +140,8 @@ const FeaturedEvent = ({ isLoading, error, event }) => {
               alignItems: 'center',
               display: 'flex',
               flexDirection: ['column', 'row'],
-              justifyContent: 'space-between',
-            })}
-          >
+              justifyContent: 'space-between'
+            })}>
             <Rsvp event={event} themeColor={themeColor}>
               {({ message, component }) => component || message}
             </Rsvp>
@@ -137,12 +150,15 @@ const FeaturedEvent = ({ isLoading, error, event }) => {
                 alignItems: 'center',
                 display: 'flex',
                 flex: 1,
-                justifyContent: 'flex-end',
-              }}
-            >
+                justifyContent: 'flex-end'
+              }}>
               <div
-                css={{ alignItems: 'center', display: 'flex', fontWeight: 300, padding: '0 1rem' }}
-              >
+                css={{
+                  alignItems: 'center',
+                  display: 'flex',
+                  fontWeight: 300,
+                  padding: '0 1rem'
+                }}>
                 <MicrophoneIcon color="#ccc" css={{ marginRight: '0.5em' }} />
                 {pluralLabel(talks.length, 'talk', 'talks')}
               </div>
@@ -155,7 +171,9 @@ const FeaturedEvent = ({ isLoading, error, event }) => {
 
                   if (!allRsvps) return null;
 
-                  const attending = `${allRsvps.length}${maxRsvps ? `/${maxRsvps}` : ''}`;
+                  const attending = `${allRsvps.length}${
+                    maxRsvps ? `/${maxRsvps}` : ''
+                  }`;
 
                   return (
                     <>
@@ -164,14 +182,16 @@ const FeaturedEvent = ({ isLoading, error, event }) => {
                           alignItems: 'center',
                           display: 'flex',
                           fontWeight: 300,
-                          padding: '0 1rem',
-                        }}
-                      >
+                          padding: '0 1rem'
+                        }}>
                         <UserIcon color="#ccc" css={{ marginRight: '0.5em' }} />
-                        {attending} {isInFuture(startTime) ? 'attending' : 'attended'}
+                        {attending}{' '}
+                        {isInFuture(startTime) ? 'attending' : 'attended'}
                       </div>
                       <AvatarStack
-                        users={allRsvps.filter(rsvp => rsvp.user).map(rsvp => rsvp.user)}
+                        users={allRsvps
+                          .filter(rsvp => rsvp.user)
+                          .map(rsvp => rsvp.user)}
                         size="small"
                       />
                     </>
@@ -203,9 +223,8 @@ const Sponsors = () => {
                 justifyContent: 'space-between',
                 alignItems: 'center',
                 listStyle: 'none',
-                padding: 0,
-              }}
-            >
+                padding: 0
+              }}>
               {allSponsors.map(sponsor => (
                 <li key={sponsor.id} css={{ flex: 1, margin: 12 }}>
                   <a href={sponsor.website} target="_blank">
@@ -233,14 +252,16 @@ function processEventsData(data) {
   if (!data || !data.upcomingEvents || !data.previousEvents) {
     return {
       featuredEvent: null,
-      moreEvents: [],
+      moreEvents: []
     };
   }
 
   const upcomingEvents = data.upcomingEvents.slice();
   const previousEvents = data.previousEvents.slice();
 
-  const featuredEvent = upcomingEvents.length ? upcomingEvents.pop() : previousEvents.pop() || null;
+  const featuredEvent = upcomingEvents.length
+    ? upcomingEvents.pop()
+    : previousEvents.pop() || null;
   const moreEvents = [];
 
   for (let i = 0; i < 3; i++) {
@@ -253,14 +274,14 @@ function processEventsData(data) {
 
   return {
     featuredEvent,
-    moreEvents,
+    moreEvents
   };
 }
 
 export default class Home extends Component {
   static getInitialProps() {
     return {
-      now: new Date().toISOString(),
+      now: new Date().toISOString()
     };
   }
 
@@ -279,7 +300,11 @@ export default class Home extends Component {
               <Hero title={meetup.name}>
                 <Html markup={meetup.homeIntro} />
               </Hero>
-              <FeaturedEvent isLoading={eventsLoading} error={eventsError} event={featuredEvent} />
+              <FeaturedEvent
+                isLoading={eventsLoading}
+                error={eventsError}
+                event={featuredEvent}
+              />
               <Container css={{ marginTop: '3rem' }}>
                 {featuredEvent && featuredEvent.talks ? (
                   <Talks talks={featuredEvent.talks} />
@@ -296,13 +321,16 @@ export default class Home extends Component {
                     css={{
                       backgroundColor: colors.greyLight,
                       margin: '5rem 0',
-                      paddingTop: '5rem',
-                    }}
-                  >
+                      paddingTop: '5rem'
+                    }}>
                     <Slant placement="top" fill={colors.greyLight} />
                     <Container>
                       <H2 hasSeparator>More Meetups</H2>
-                      <EventItems events={moreEvents} offsetTop css={{ marginTop: '3rem' }} />
+                      <EventItems
+                        events={moreEvents}
+                        offsetTop
+                        css={{ marginTop: '3rem' }}
+                      />
                       <Link href="/events">
                         <a
                           css={{
@@ -312,10 +340,9 @@ export default class Home extends Component {
                             marginTop: '1rem',
 
                             ':hover > span': {
-                              textDecoration: 'underline',
-                            },
-                          }}
-                        >
+                              textDecoration: 'underline'
+                            }
+                          }}>
                           <span>View all</span> &rarr;
                         </a>
                       </Link>
@@ -338,13 +365,14 @@ export default class Home extends Component {
 const Section = props => (
   <section
     css={{
-      position: 'relative',
+      position: 'relative'
     }}
     {...props}
   />
 );
 const Slant = ({ fill, height = 5, placement }) => {
-  const points = placement === 'bottom' ? '0, 100 0, 0 100, 0' : '0 100, 100 0, 100, 100';
+  const points =
+    placement === 'bottom' ? '0, 100 0, 0 100, 0' : '0 100, 100 0, 100, 100';
 
   return (
     <svg
@@ -353,12 +381,11 @@ const Slant = ({ fill, height = 5, placement }) => {
         width: '100vw',
         display: 'block',
         position: 'absolute',
-        [placement]: `-${height}vw`,
+        [placement]: `-${height}vw`
       }}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 100 100"
-      preserveAspectRatio="none"
-    >
+      preserveAspectRatio="none">
       <polygon fill={fill} points={points} />
     </svg>
   );

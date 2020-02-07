@@ -6,18 +6,19 @@ import contrast from 'get-contrast';
 import { colors } from '../theme';
 
 const {
-  publicRuntimeConfig: { meetup },
+  publicRuntimeConfig: { meetup }
 } = getConfig();
 
 // Check if date is in future or past
 export const isInFuture = date => isFuture(parseISO(date));
 
 // Pretty date formatting
-export const formatFutureDate = date => format(parseISO(date), 'ddd d MMM, h:mm a');
+export const formatFutureDate = date =>
+  format(parseISO(date), 'ddd d MMM, h:mm a');
 export const formatPastDate = date => {
   console.log(parseISO(date), parseISO('MMM yyyy'));
   return format(parseISO(date), parseISO('MMM yyyy'));
-}
+};
 
 // export const formatFutureDate = date => format(date, 'ddd D MMM, h:mm A');
 // export const formatPastDate = date => format(date, 'MMM YYYY');

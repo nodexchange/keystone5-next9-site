@@ -1,11 +1,15 @@
-version: '3'
+version: "3"
 services:
   mongo:
     image: "mongo:4.0.4"
     container_name: "mongo"
     ports:
-      - '28019:27017'
-
+      - "28019:27017"
+  # app:
+  #   image: "keyjs-v1:latest"
+  #   container_name: "keyjs"
+  #   ports:
+  #     - '3000:3000'
   # website-client:
   #   env_file:
   #     - ./.env
@@ -16,7 +20,6 @@ services:
   #     - mongo
   #   ports:
   #     - 3000:3000
-
   # nginx:
   #   env_file:
   #     - ./.env
