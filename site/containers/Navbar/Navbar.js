@@ -16,7 +16,8 @@ import {
   HeaderGutter,
   NavAnchor,
   NavButton,
-  NavLink
+  NavLink,
+  NavText
 } from '../../components';
 
 const ThemeContext = createContext();
@@ -32,7 +33,7 @@ const hideOnMobile = mq({
 // TODO: Implement log out
 const UserActions = ({ user, navLinksProps }) => {
   const { signout } = useAuth();
-
+  const { foreground } = useTheme();
   return (
     <div>
       {user.isAdmin && (
@@ -41,7 +42,7 @@ const UserActions = ({ user, navLinksProps }) => {
         </NavAnchor>
       )}
       <span css={{ alignItems: 'center', display: 'inline-flex' }}>
-        <NavText css={hideOnMobile}>
+        <NavText css={hideOnMobile} css={{ color: foreground, fontSize: fontSizes.sm }} >
           <strong>{user.name}</strong>
         </NavText>
         <NavLink href="/signout" onClick={onSignout} {...navLinksProps}>

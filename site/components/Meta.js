@@ -53,7 +53,6 @@ export default function PageMeta({
     ? `${title} | ${meetup.name}`
     : null;
   const uniqueTags = children ? getUniqueTags(children) : rootTags;
-  console.log(uniqueTags);
   return (
     <Head>
       {titleContent && <title>{titleContent}</title>}

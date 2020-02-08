@@ -26,7 +26,7 @@ const EventItem = event => {
     : formatPastDate(startTime);
 
   const hex = themeColor && themeColor.slice(1);
-
+  console.log(prettyDate, name)
   return (
     <li {...props} css={mq({ width: ['100%', '50%', '50%', '33.33%'] })}>
       <div
@@ -38,6 +38,7 @@ const EventItem = event => {
           padding: `${gridSize * 3}px ${gridSize * 3}px 0`,
           position: 'relative',
           transition: 'all 0.1s',
+          height: `${gridSize * 16}px`,
 
           '&:hover': {
             boxShadow: shadows.md,
@@ -108,7 +109,7 @@ const Mask = props => (
       left: 0,
       background: 'linear-gradient(rgba(255, 255, 255, 0), white 66%)',
       width: '100%',
-      height: 100,
+      height: '100px',
     }}
     {...props}
   />

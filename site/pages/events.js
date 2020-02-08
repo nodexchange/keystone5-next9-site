@@ -15,10 +15,10 @@ import { GET_ALL_EVENTS } from '../graphql/events';
 export default function Events() {
   return (
     <>
-      <Meta title="Events" />
+      <Meta title="Instructors" />
       <Navbar background="white" />
-      <Container css={{ marginTop: gridSize * 3 }}>
-        <H2>Events</H2>
+      <Container css={{ marginTop: gridSize * 12 }}>
+        <H2>Instructors</H2>
         <Query query={GET_ALL_EVENTS}>
           {({ data, loading, error }) => {
             if (loading) {

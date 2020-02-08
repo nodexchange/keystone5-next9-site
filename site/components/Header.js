@@ -10,7 +10,8 @@ export const Header = props => {
       css={mq({
         position: 'fixed',
         zIndex: 2000,
-        width: '100%'
+        width: '100%',
+        top: 0
       })}
       {...props}
     />

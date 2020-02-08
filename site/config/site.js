@@ -1,9 +1,9 @@
 const MEETUP = {
-  name: 'OUP Arc',
+  name: 'RMD',
   twitterHandle: '@keystonejs',
   siteUrl: 'https://meetup.keystonejs.com/',
   themeColor: 'rgb(181,14,19)',
-  navText: "THE WORLD'S NUMBER ONE NETWORK OF PROFESSIONAL BACHATA TEACHERS",
+  navText: "THE WORLD'S NUMBER ONE NETWORK OF PROFESSIONAL DANCE TEACHERS",
   logo: {
     src: '/static/rmdlogo2.png',
     width: 100,
@@ -37,10 +37,11 @@ const MEETUP = {
 `,
     callToActionButtonLabel: `Join us now`,
     copyrightText: `
-<p>Copyright &copy; Thinkmill Pty Ltd, powered by <a href="https://keystonejs.com">KeystoneJS</a>.</p>
-<p>If you run a meetup, please feel free to clone our site and make your own!
-  <a href="https://github.com/keystonejs/keystone-5/tree/master/demo-projects/meetup">You can find it on GitHub</a>.
-</p>
+    <p>*DISCLAIMER | Results may vary | Results are based on individual circumstances | Timeframes for results are not guaranteed | Willpower is always required!</p>
+    <p>The information on this website is for entertainment purposes only and should not be seen as a substitute for working with a qualified professional. You must consult with a medical / fitness professional before starting any new exercise / nutrition program.</p>
+<p>Terms & Conditions | Privacy Policy | Cookies Policy</p>
+<p>&copy Rate My Dance 2020 | Online Dance Instructor Network - UK</p>
+<p>For your safety and privacy of our users, always use the website to communicate. We cannot guarantee payment or genuinity of accounts outside our platform. </p>
 `
   },
   aboutIntro: `<p>Every 3rd Wednesday of the month you'll find us talking about what we're doing and what's happening around us in the world of lorem ipsum.</p>`
