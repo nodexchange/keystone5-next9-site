@@ -7,7 +7,7 @@ import Head from 'next/head';
 import { jsx } from '@emotion/core';
 
 const {
-  publicRuntimeConfig: { meetup },
+  publicRuntimeConfig: { meetup }
 } = getConfig();
 
 export const makeMetaUrl = path => {
@@ -28,7 +28,7 @@ const rootTags = [
   <meta property="og:image:height" content={meetup.logo.height} />,
   <meta name="twitter:site" content={meetup.twitterHandle} />,
   <meta name="twitter:card" content="summary" />,
-  <meta name="twitter:image" content={logoPath} />,
+  <meta name="twitter:image" content={logoPath} />
 ];
 
 function getUniqueTags(children) {
@@ -36,13 +36,24 @@ function getUniqueTags(children) {
   // we want to give `children` precedence over root tags.
   const tags = Children.toArray(children.concat(rootTags));
   const uniqueTags = uniqBy(tags, t => t.props.name || t.props.property);
-  return uniqueTags.map((tag, idx) => <tag.type key={tag.key || idx} {...tag.props} />);
+  return uniqueTags.map((tag, idx) => (
+    <tag.type key={`tag-${idx}`} {...tag.props} />
+  ));
 }
 
-export default function PageMeta({ children, description, title, titleExclusive }) {
-  const titleContent = titleExclusive ? titleExclusive : title ? `${title} | ${meetup.name}` : null;
+export default function PageMeta({
+  children,
+  description,
+  title,
+  titleExclusive
+}) {
+  const titleContent = titleExclusive
+    ? titleExclusive
+    : title
+    ? `${title} | ${meetup.name}`
+    : null;
   const uniqueTags = children ? getUniqueTags(children) : rootTags;
-
+  console.log(uniqueTags);
   return (
     <Head>
       {titleContent && <title>{titleContent}</title>}

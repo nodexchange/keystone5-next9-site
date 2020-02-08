@@ -61,7 +61,6 @@ const FeaturedEvent = ({ isLoading, error, event }) => {
     talks,
     themeColor
   } = event;
-  console.log(startTime);
   const prettyDate = isInFuture(startTime)
     ? formatFutureDate(startTime)
     : formatPastDate(startTime);

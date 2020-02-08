@@ -23,7 +23,7 @@ export const NavAnchor = props => {
         paddingBottom: paddingVertical,
         paddingTop: paddingVertical,
         textDecoration: 'none',
-
+        textTransform: 'uppercase',
         ':hover': {
           textDecoration: 'underline'
         }

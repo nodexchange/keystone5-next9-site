@@ -2,11 +2,12 @@ const MEETUP = {
   name: 'OUP Arc',
   twitterHandle: '@keystonejs',
   siteUrl: 'https://meetup.keystonejs.com/',
-  themeColor: '#2377E7',
+  themeColor: 'rgb(181,14,19)',
+  navText: "THE WORLD'S NUMBER ONE NETWORK OF PROFESSIONAL BACHATA TEACHERS",
   logo: {
     src: '/static/rmdlogo2.png',
-    width: 200,
-    height: 111
+    width: 100,
+    height: 61
   },
   homeIntro: `
 <p>Welcome to the KeystoneJS Meetup!  Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>

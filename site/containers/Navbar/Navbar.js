@@ -142,38 +142,51 @@ export default function Navbar({ background = 'white', ...props }) {
               marginLeft: 'auto',
               marginRight: 'auto'
             }}>
-            THE WORLD'S NUMBER ONE BODY COMPOSITION EXPERTS
+            {meetup.navText}
           </span>
         </NavContainer>
-        <NavContainer
+        <div
           css={{
-            background: 'black',
-            color: 'white',
+            paddingLeft: '30px',
+            paddingRight: '30px',
+            background: '#101010',
             filter: 'drop-shadow(0px 0px 1px black)'
           }}>
-          <Link href="/" passHref>
-            <a>
-              <img
-                src={meetup.logo.src}
-                width={logoWidth}
-                height={logoHeight}
-                alt={meetup.name}
-                css={mq({
-                  boxShadow: shadows.sm,
-                  marginRight: [gridSize, gridSize * 2],
-                  width: [logoWidthSm, logoWidth],
-                  height: [logoHeightSm, logoHeight]
-                })}
-              />
-            </a>
-          </Link>
-          <div css={{ flex: 1 }}>
-            <NavLink href="/">Home</NavLink>
-            <NavLink href="/about">About</NavLink>
-            <NavLink href="/events">Events</NavLink>
-          </div>
-          {isAuthenticated ? <UserActions user={user} /> : <AnonActions />}
-        </NavContainer>
+          <NavContainer
+            css={{
+              background: '#101010',
+              color: 'white'
+            }}>
+            <Link href="/" passHref>
+              <a>
+                <img
+                  src={meetup.logo.src}
+                  width={logoWidth}
+                  height={logoHeight}
+                  alt={meetup.name}
+                  css={mq({
+                    boxShadow: shadows.sm,
+                    marginRight: [gridSize, gridSize * 2],
+                    width: [logoWidthSm, logoWidth],
+                    height: [logoHeightSm, logoHeight]
+                  })}
+                />
+              </a>
+            </Link>
+            <div css={{ flex: 1 }}>
+              <NavLink href="/">
+                Our <br /> Services
+              </NavLink>
+              <NavLink href="/about">
+                Our <br /> Promise
+              </NavLink>
+              <NavLink href="/events">
+                Our <br /> Instructors
+              </NavLink>
+            </div>
+            {isAuthenticated ? <UserActions user={user} /> : <AnonActions />}
+          </NavContainer>
+        </div>
       </Header>
     </ThemeContext.Provider>
   );

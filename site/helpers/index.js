@@ -16,7 +16,6 @@ export const isInFuture = date => isFuture(parseISO(date));
 export const formatFutureDate = date =>
   format(parseISO(date), 'ddd d MMM, h:mm a');
 export const formatPastDate = date => {
-  console.log(parseISO(date), parseISO('MMM yyyy'));
   return format(parseISO(date), parseISO('MMM yyyy'));
 };
 
