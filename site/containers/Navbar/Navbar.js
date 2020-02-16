@@ -30,6 +30,10 @@ const hideOnMobile = mq({
   display: ['none', 'none', 'initial']
 });
 
+const ourNavText = {
+  color: 'red'
+};
+
 // TODO: Implement log out
 const UserActions = ({ user, navLinksProps }) => {
   const { signout } = useAuth();
@@ -176,13 +180,13 @@ export default function Navbar({ background = 'white', ...props }) {
             </Link>
             <div css={{ flex: 1 }}>
               <NavLink href="/">
-                Our <br /> Services
+                <span css={ourNavText}>Our</span><br /> Services
               </NavLink>
               <NavLink href="/about">
-                Our <br /> Promise
+              <span css={ourNavText}>Our</span><br /> Promise
               </NavLink>
               <NavLink href="/events">
-                Our <br /> Instructors
+                <span css={ourNavText}>Our</span><br /> Instructors
               </NavLink>
             </div>
             {isAuthenticated ? <UserActions user={user} /> : <AnonActions />}

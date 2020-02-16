@@ -298,32 +298,10 @@ export default class Home extends Component {
               <Hero title={meetup.name}>
                 <Html markup={meetup.homeIntro} />
               </Hero>
-              <FeaturedEvent
-                isLoading={eventsLoading}
-                error={eventsError}
-                event={featuredEvent}
-              />
-              <Container css={{ marginTop: '3rem' }}>
-                {featuredEvent && featuredEvent.talks ? (
-                  <Talks talks={featuredEvent.talks} />
-                ) : null}
-              </Container>
-              <Section css={{ padding: '3rem 0' }}>
-                <Container>
-                  <Sponsors />
-                </Container>
-              </Section>
-              {moreEvents.length ? (
-                <>
-                  <Section
-                    css={{
-                      backgroundColor: colors.greyLight,
-                      margin: '5rem 0',
-                      paddingTop: '5rem'
-                    }}>
-                    <Slant placement="top" fill={colors.greyLight} />
-                    <Container>
+              <Container>
                       <H2 hasSeparator>More Meetups</H2>
+                      
+                    <Slant placement="top" fill={colors.greyLight} />
                       <EventItems
                         events={moreEvents}
                         offsetTop
@@ -344,7 +322,26 @@ export default class Home extends Component {
                           <span>View all</span> &rarr;
                         </a>
                       </Link>
+                      
                     </Container>
+              <Container css={{ marginTop: '3rem' }}>
+                {featuredEvent && featuredEvent.talks ? (
+                  <Talks talks={featuredEvent.talks} />
+                ) : null}
+              </Container>
+              <Section css={{ padding: '3rem 0' }}>
+                <Container>
+                  <Sponsors />
+                </Container>
+              </Section>
+              {moreEvents.length ? (
+                <>
+                  <Section
+                    css={{
+                      backgroundColor: colors.greyLight,
+                      margin: '5rem 0',
+                      paddingTop: '5rem'
+                    }}>
                     <Slant placement="bottom" fill={colors.greyLight} />
                   </Section>
                 </>
