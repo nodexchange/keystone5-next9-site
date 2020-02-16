@@ -299,7 +299,7 @@ export default class Home extends Component {
                 <Html markup={meetup.homeIntro} />
               </Hero>
               <Container>
-                      <H2 hasSeparator>More Meetups</H2>
+                      <H2 hasSeparator>Featured Instructors</H2>
                       
                     <Slant placement="top" fill={colors.greyLight} />
                       <EventItems
