@@ -12,10 +12,10 @@ import { gridSize } from '../theme';
 
 import { GET_ALL_EVENTS } from '../graphql/events';
 
-export default function Events() {
+export default function Instructors() {
   return (
     <>
-      <Meta title="Instructors" />
+      <Meta title="Our Instructors" />
       <Navbar background="white" />
       <Container css={{ marginTop: gridSize * 12 }}>
         <H2>Instructors</H2>

@@ -46,7 +46,9 @@ const UserActions = ({ user, navLinksProps }) => {
         </NavAnchor>
       )}
       <span css={{ alignItems: 'center', display: 'inline-flex' }}>
-        <NavText css={hideOnMobile} css={{ color: foreground, fontSize: fontSizes.sm }} >
+        <NavText
+          css={hideOnMobile}
+          css={{ color: foreground, fontSize: fontSizes.sm }}>
           <strong>{user.name}</strong>
         </NavText>
         <NavLink href="/signout" onClick={onSignout} {...navLinksProps}>
@@ -179,14 +181,17 @@ export default function Navbar({ background = 'white', ...props }) {
               </a>
             </Link>
             <div css={{ flex: 1 }}>
-              <NavLink href="/">
-                <span css={ourNavText}>Our</span><br /> Services
+              <NavLink href="/services">
+                <span css={ourNavText}>Our</span>
+                <br /> Services
               </NavLink>
-              <NavLink href="/about">
-              <span css={ourNavText}>Our</span><br /> Promise
+              <NavLink href="/promise">
+                <span css={ourNavText}>Our</span>
+                <br /> Promise
               </NavLink>
-              <NavLink href="/events">
-                <span css={ourNavText}>Our</span><br /> Instructors
+              <NavLink href="/instructors">
+                <span css={ourNavText}>Our</span>
+                <br /> Instructors
               </NavLink>
             </div>
             {isAuthenticated ? <UserActions user={user} /> : <AnonActions />}

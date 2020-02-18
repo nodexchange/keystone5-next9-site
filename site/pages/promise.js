@@ -4,7 +4,16 @@ import { Query } from 'react-apollo';
 import getConfig from 'next/config';
 import { jsx } from '@emotion/core';
 
-import { Avatar, Container, Error, H1, H2, H3, Html, Loading } from '../primitives';
+import {
+  Avatar,
+  Container,
+  Error,
+  H1,
+  H2,
+  H3,
+  Html,
+  Loading
+} from '../primitives';
 import { Footer, Navbar } from '../containers';
 import Meta from '../components/Meta';
 import { colors, gridSize } from '../theme';
@@ -13,12 +22,12 @@ import { mq } from '../helpers/media';
 
 const { publicRuntimeConfig } = getConfig();
 
-export default function About() {
+export default function Promise() {
   const { meetup } = publicRuntimeConfig;
 
   return (
     <>
-      <Meta title="About" description={meetup.aboutIntro} />
+      <Meta title="Our Promise" description={meetup.aboutIntro} />
       <Navbar background="white" />
       <Container css={{ marginTop: gridSize * 3 }}>
         <H1 hasSeparator css={{ marginBottom: '0.66em' }}>
@@ -34,13 +43,17 @@ export default function About() {
             if (loading) return <Loading />;
             if (error) return <Error error={error} />;
 
-            const hasOrganisers = Boolean(data.allOrganisers && data.allOrganisers.length);
+            const hasOrganisers = Boolean(
+              data.allOrganisers && data.allOrganisers.length
+            );
 
             if (!hasOrganisers) {
               return null;
             }
 
-            const allOrganisers = data.allOrganisers.filter(o => o.user).map(o => o.user);
+            const allOrganisers = data.allOrganisers
+              .filter(o => o.user)
+              .map(o => o.user);
 
             return (
               <OrganiserList
@@ -48,8 +61,7 @@ export default function About() {
                   <H3 size={5} css={{ marginBottom: '0.66em' }}>
                     Organisers
                   </H3>
-                }
-              >
+                }>
                 {allOrganisers.map(organiser => {
                   return <Organiser key={organiser.id} organiser={organiser} />;
                 })}
@@ -60,7 +72,9 @@ export default function About() {
 
         {meetup.codeOfConduct ? (
           <Content>
-            <H2 hasSeparator css={{ marginBottom: '0.66em', marginTop: '1.22em' }}>
+            <H2
+              hasSeparator
+              css={{ marginBottom: '0.66em', marginTop: '1.22em' }}>
               Code of Conduct
             </H2>
             <Html markup={meetup.codeOfConduct} />
@@ -78,9 +92,8 @@ const OrganiserList = ({ title, ...props }) => (
   <div
     css={mq({
       backgroundColor: colors.greyLight,
-      padding: '1.5rem',
-    })}
-  >
+      padding: '1.5rem'
+    })}>
     {title}
     <ul
       css={mq({
@@ -89,7 +102,7 @@ const OrganiserList = ({ title, ...props }) => (
         justifyContent: 'space-between',
         listStyle: 'none',
         margin: 0,
-        padding: 0,
+        padding: 0
       })}
       {...props}
     />
@@ -104,19 +117,20 @@ const Organiser = ({ organiser }) => (
       padding: 0,
 
       ':not(:first-of-type)': {
-        marginTop: ['1em', 0],
-      },
-    })}
-  >
-    <Avatar name={organiser.name} src={organiser.image && organiser.image.small} />
+        marginTop: ['1em', 0]
+      }
+    })}>
+    <Avatar
+      name={organiser.name}
+      src={organiser.image && organiser.image.small}
+    />
     <div css={{ marginLeft: '1em' }}>
       <div css={{ fontWeight: 'bold' }}>{organiser.name}</div>
       {organiser.twitterHandle && (
         <a
           css={{ color: colors.greyDark }}
           href={twitterLink(organiser.twitterHandle)}
-          target="_blank"
-        >
+          target="_blank">
           {organiser.twitterHandle}
         </a>
       )}
