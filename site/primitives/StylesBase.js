@@ -6,11 +6,11 @@ export default function StylesBase() {
     <Global
       styles={css`
         ${normalize};
-        $@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+        $@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway&display=swap');
         body {
           max-width: 100%;
           overflow-x: hidden;
-          font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+          font-family: 'Raleway', 'Open Sans', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
           line-height: 1.5;
 
           text-decoration-skip: ink;
